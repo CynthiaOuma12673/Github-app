@@ -24,7 +24,7 @@
                 <hr>
                 <p> <i class="fa fa-users"></i>Followers:<span class="follow">{{gotUser.followers}}</span></p>
                 <hr>
-                <p><i class="fa fa-clock-o"></i>Created on: <span class="datecreated">{{gotUser.created_at}}</span></p>
+                <p><i class="fa fa-clock-o"></i>Created on: <span class="datecreated">{{gotUser.created_at|date|uppercase}}</span></p>
                 <hr>
         </div>
         </div>
@@ -42,7 +42,7 @@
                 <div class="card-subtitle">
                 <span class="top">Language: </span> {{repo.languages}}
                 </div>
-                <div class="card-subtitle"><span>Created On:</span>{{repo.created_at}}</div>
+                <div class="card-subtitle"><span>Created On:</span>{{repo.created_at|date|uppercase}}</div>
                 </div>
                 </div>
                 <div class="card-footer">
